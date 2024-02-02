@@ -71,7 +71,8 @@ export default {
             return this.data.date
         },
         imageUrl() {
-            return this.data.image || this.refreshedImageUrl || `/images/${this.data.name.toLowerCase()}.jpg`
+            // precedence taken to refreshed image url, then if data have image of itself, orself static image matching image name
+            return this.refreshedImageUrl || this.data.image || `/images/${this.data.name.toLowerCase()}.jpg`
         }
     },
     methods: {
