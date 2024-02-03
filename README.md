@@ -1,8 +1,14 @@
 # Musuem Project
 
+## Deploy in the following link
+```
+http://museum.maharjantech.com/
+```
+
 ### The files can be found inside the following path 
 ```
  /src/components
+/src/views
 ```
 
 ## Project setup
